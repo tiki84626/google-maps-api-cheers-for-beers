@@ -9,6 +9,7 @@ npm install del --save-dev
 npm install jshint --save-dev
 npm install gulp-jshint --save-dev
 npm install gulp-sass gulp-sourcemaps --save-dev
+npm install @google/maps
 
 bower init
 bower install jquery --save

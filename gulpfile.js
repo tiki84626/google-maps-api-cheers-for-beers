@@ -23,7 +23,6 @@ var lib = require('bower-files')({
   }
 });
 
-
 gulp.task('jsBrowserify', ['concatInterface'], function() {
   return browserify({ entries: ['./tmp/allConcat.js'] })
     .bundle()
@@ -50,6 +49,9 @@ gulp.task("build", ['clean'], function(){
     gulp.start('jsBrowserify');
   }
   gulp.start('bower');
+  gulp.start('cssBuild');
+
+
 });
 
 gulp.task("clean", function(){
