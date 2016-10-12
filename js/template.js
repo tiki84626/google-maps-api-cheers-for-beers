@@ -1,1 +1,1 @@
-exports.TemplateModule = Template;
+// exports.templateModule = Template;

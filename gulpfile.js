@@ -8,6 +8,8 @@ var uglify = require('gulp-uglify');
 var jshint = require('gulp-jshint');
 var buildProduction = utilities.env.production;
 var browserSync = require('browser-sync').create();
+var sass = require('gulp-sass');
+var sourcemaps = require('gulp-sourcemaps');
 
 var lib = require('bower-files')({
   "overrides":{
